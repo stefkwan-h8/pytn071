@@ -2,6 +2,8 @@ from flask import Flask, render_template, request
 app = Flask(__name__)
 import pickle
 
+model = pickle.load(open("model/campus_tree.pkl", 'rb'))
+
 @app.route('/')
 def campus():
     return render_template("main.html")
@@ -19,7 +21,6 @@ def predict():
     fitur = [fitur] #[[100, 0]]
 
     # bikin prediksi, kita load model kita
-    model = pickle.load(open("model/campus_tree.pkl", 'rb'))
     hasil = model.predict(fitur)
 
     index = hasil[0]
