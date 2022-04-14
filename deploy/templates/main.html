@@ -6,7 +6,7 @@
 
     <body>
         <h1>Prediksi peserta diterima kerja atau tidak</h1>
-        <form action="" method="post">
+        <form action="/predict" method="post">
             <label for="nilai_sma">Nilai SMA:</label><br>
             <input type="number" name="nilai_sma" id="nilai_sma" min="0" max="100" required>
             <br><br>
@@ -21,5 +21,9 @@
 
             <input type="submit" value="Buat Prediksi" class="button">
         </form>
+
+        <p>{{nilai_sma}}</p>
+        <p>{{jurusan}}</p>
+        <p>{{prediksi}}</p>
     </body>
 </html>
