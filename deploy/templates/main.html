@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Campus Placement</title>
+        <link rel="stylesheet" href="../static/css/main.css">
+    </head>
+
+    <body>
+        <h1>Prediksi peserta diterima kerja atau tidak</h1>
+        <form action="" method="post">
+            <label for="nilai_sma">Nilai SMA:</label><br>
+            <input type="number" name="nilai_sma" id="nilai_sma" min="0" max="100" required>
+            <br><br>
+
+            <label for="jurusan_sma">Jurusan SMA:</label><br>
+            <input type="radio" id="jurusan0" name="jurusan" value="0" required>
+            <label for="jurusan1">Arts</label><br>
+            <input type="radio" id="jurusan1" name="jurusan" value="1" required>
+            <label for="jurusan2">Commerce</label><br>
+            <input type="radio" id="jurusan2" name="jurusan" value="2" required>
+            <label for="jurusan3">Science</label><br><br>
+
+            <input type="submit" value="Buat Prediksi" class="button">
+        </form>
+    </body>
+</html>
